@@ -4,7 +4,7 @@
 master_branches = ['release-v3.12-d2iq', ] as String[]
 slack_creds_id = '8b793652-f26a-422f-a9ba-0d1e47eb9d89'
 slack_channel = '#dcos-networking-ci'
-aws_credentials_id = 'aws-mesosphere-dev-jenkins'
+aws_credentials_id = 'network-ci-account'
 github_credentials_id = 'd146870f-03b0-4f6a-ab70-1d09757a51fc'
 github_repo = 'dcos/calicoctl'
 
