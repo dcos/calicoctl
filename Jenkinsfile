@@ -253,6 +253,10 @@ pipeline {
 
                 unstash 'calicoctl_binaries'
 
+                sh 'curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"'
+                sh 'unzip awscliv2.zip'
+                sh 'sudo ./aws/install'
+
                 // Confirm that we actually have something:
                 sh 'ls -l ./bin/'
                 sh './bin/calicoctl-linux-amd64 version || true'
