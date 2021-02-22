@@ -141,8 +141,7 @@ def with_aws(String credentials_id, Closure body) {
 pipeline {
     agent {
         node {
-            label 'gotoolbox1'
-            customWorkspace '/go/src/github.com/dcos/calicoctl'
+            label 'mesos-ec2-ubuntu-18.04'
         }
     }
 
