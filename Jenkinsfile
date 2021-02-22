@@ -230,7 +230,7 @@ pipeline {
             steps {
                 store_image_name()
 
-                sh 'go get -u github.com/tcnksm/ghr'
+                sh 'curl https://github.com/tcnksm/ghr/releases/download/v0.13.0/ghr_v0.13.0_linux_amd64.tar.gz | tar -zxv -C /usr/local/bin --strip-components=1 ghr_v0.13.0_linux_amd64/ghr'
 
                 // Supplying all targets at once speeds things up with
                 // calico's build container:
